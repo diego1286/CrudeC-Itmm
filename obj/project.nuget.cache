@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EukaDNAmVblIO2oTnMlH0GhnJozKKyFc8aZkYGLiAX3tGOdnJNJvJgiWI6+lDRN7lzvzzt61EhP/9MzVpmTt3g==",
+  "dgSpecHash": "F4P54OKso17OyI9KA/6jc6D+lTl9JTJiVgV1D5G33rjMFj2jK+oMG7fy2wCD3ohHvwERbarOmmU9PcWmyEJGmA==",
   "success": true,
   "projectFilePath": "/Users/das/Desktop/EbooksC#_itm/ebooksItm/ebooksItm.csproj",
   "expectedPackageFiles": [
@@ -49,7 +49,7 @@
     "/Users/das/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
     "/Users/das/.nuget/packages/stub.system.data.sqlite.core.netstandard/1.0.118/stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
     "/Users/das/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "/Users/das/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/das/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/das/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/das/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/Users/das/.nuget/packages/system.codedom/4.7.0/system.codedom.4.7.0.nupkg.sha512",

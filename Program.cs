@@ -1,15 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using ebooksItm.Data;
+using Microsoft.OpenApi.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 // Add services to the container.
 builder.Services.AddDbContext<DataContext>(option =>option.UseSqlite(connectionString));
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ebooksItm", Version = "v1" });
+});
 
 var app = builder.Build();
 
@@ -17,7 +25,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "ebooksItm V1");
+});
 }
 
 app.UseHttpsRedirection();
@@ -41,6 +52,7 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
 
 app.Run();
 
